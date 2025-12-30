@@ -19,7 +19,7 @@ public class DuelTileEntity extends BlockEntity implements MenuProvider
 {
     public DuelManager duelManager;
     
-    public DuelTileEntity(BlockEntityType<DuelTileEntity> tileEntityType, BlockPos pos, BlockState state)
+    public DuelTileEntity(BlockEntityType<? extends DuelTileEntity> tileEntityType, BlockPos pos, BlockState state)
     {
         super(tileEntityType, pos, state);
         duelManager = null;
